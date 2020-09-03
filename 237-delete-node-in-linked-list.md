@@ -31,7 +31,7 @@ Since I don't know the preceding node, I can't just change that node's `this.val
 
 This works with the given constraints, such as the knowledge that we're never asked to delete the tail node.
 
-```
+```javascript
 /**
  * Definition for singly-linked list.
  * function ListNode(val) {
@@ -53,7 +53,7 @@ const deleteNode = function(node) {
 
 Pretty much every other JavaScript solution looked like mine. One clever one, though, used JavaScript's `Object.assign()` to make it a one-liner. Runtime and memory came out identically to my original submission.
 
-```
+```javascript
 var deleteNode = function(node) {
     Object.assign(node, node.next);
 };
